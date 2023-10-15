@@ -11,6 +11,21 @@
 I use this webpage to elucidate my thoughts on the recent hype-storm about the alleged chess playing ability by large language models, especially gpt-3.5-turbo-instruct.
 I plan to release quantitative data relevant to the subject - something that has been on sorely low supply.
 </P>
+
+There is a lot of confusion about this, because GPT is excellent at pretending. Its algorithm completes text by adding tokens which make for sensible looking text
+- without either the intent or the ability to check whether it is sensible. So appears superficially as if GPT writes intelligently,
+when in fact it generates bullshit.
+<P>
+ Likewise, given a prompt to invoke creating chess game notation (PGN code),
+  GPT-based chess emulators complete move sequences by adding tokens which make for sensible looking PGN code
+- without either the intent or the ability to check whether they are sensible chess moves.  
+</P>
+<P>
+Much of the time the moves do happen to be sensible. But that is a happenstance caused by the training corpus (which includes the Internet)
+ having had billions of chess games available in easily digestible PGN format.
+ Regurgiating patterns learnt from that does not enable actual evaluation of positions.  
+</P>
+
 <P>
  For a different perspective, see the <a href="http://blog.mathieuacher.com/GPTsChessEloRatingLegalMoves/">post by Aathieu Acher</a>, with an excellent initial summary on the topic.
 </P>
