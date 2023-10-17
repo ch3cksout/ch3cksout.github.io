@@ -4,14 +4,15 @@
 
 <H2>
  <a href="https://nitter.net/GrantSlatton/status/1703913578036904431">
-   Grant Slatton: “the new GPT model, gpt-3.5-turbo-instruct, can play chess around 1800 Elo”
+   Grant Slatton: 
  </a>  
+ “the new GPT model, gpt-3.5-turbo-instruct, can play chess around 1800 Elo”
 </H2>
 
 <H3>
  <a href="https://nitter.net/GrantSlatton/status/1703913578036904431">
- The tweet remarkably lacks any supporting data
- </a>, aside from 
+ The tweet remarkably lacks any supporting data,
+ </a> aside from 
  <a href="https://lichess.org/K6Q0Lqda">
  a single game shown.
  </a>
@@ -49,4 +50,35 @@ Chess emulators based on it typically spoil about 1 in 10 games.
   </a>
  its king blithely steps into check: <B>Kd2</B>.
 <iframe id="11138763" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=11138763"></iframe><script>window.addEventListener("message",e=>{e['data']&&"11138763"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+</P>
+
+<H2>
+ <a href="https://nitter.net/a_karvonen/status/1705340535836221659#m">
+  Adam Karvonen
+ </a>  
+ then followed up with a neat quantitative study.
+</H2>
+
+<H3>
+ <a href="https://nitter.net/GrantSlatton/status/1703913578036904431">
+ Here the full code, as well as datasets
+ </a>  
+ were reported, along with a nice Jupyter notebook on the statistics.
+</a>
+</H3>
+
+<P>
+ A shortcoming of
+ <a href="https://nitter.net/a_karvonen/status/1705340535836221659#m">
+  Karvonen's setup
+ </a>  
+ is the very short thinking time set for Stockfish: 100 ms, which severely reduces its playing strength.
+ (6 s per move is already considered fast playing for the engine!)
+ Also, GPT always got to play White, which makes this set of games unsuitable for realistic Elo computation.
+</P>
+
+<P>
+ My quick analysis of the reported results indicated that the putative rating gained
+by playing against various Stockfish levels was heavily skewed:
+ performance was relatively better against weak opponents, and went sharply down against better ones.
 </P>
