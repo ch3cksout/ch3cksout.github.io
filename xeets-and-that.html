@@ -1,0 +1,47 @@
+<H1>
+ xitterspace history of GPT-chess, annotated
+</H1>
+
+<H2>
+ <a href="https://nitter.net/GrantSlatton/status/1703913578036904431">
+   Grant Slatton:“the new GPT model, gpt-3.5-turbo-instruct, can play chess around 1800 Elo”
+ </a>  
+</H2>
+
+<H3>
+ <a href="https://nitter.net/GrantSlatton/status/1703913578036904431">
+ The tweet remarkably lacks any supporting data
+ </a>, aside from 
+ <a href="https://lichess.org/K6Q0Lqda">
+ a single game shown.
+ </a>
+</H3>
+
+<P>
+ Slatton's narrative went: "The new model readily beats Stockfish Level 4 (1700) and still loses respectably to Level 5 (2000)."
+</P>
+
+<P>
+ It was also claimed that gpt-3.5-turbo-instruct never attempts illegal moves, which is readily shown to be false.
+Chess emulators based on gpt-3.5-turbo-instruct typically spoil about 1 in 10 games.
+  
+</P>
+
+<P>
+  Here are but two examples, obtained via running .
+  <a href="https://github.com/clevcode/skynet-dev">
+    'parrotchess' code
+  </a>.
+  In 
+  <a href="https://www.chess.com/analysis/library/2CL6GcjFot">
+    this game
+  </a>, the bot attempts to jump over a rook by its queen. 
+  <iframe id="11138717" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=11138717"></iframe><script>window.addEventListener("message",e=>{e['data']&&"11138717"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+</P>
+ And  
+  <a href="https://www.chess.com/analysis/library/3JXfH59qCz">
+    in this one
+  </a>,
+ its king blithely steps into check.
+<iframe id="11138763" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=11138763"></iframe><script>window.addEventListener("message",e=>{e['data']&&"11138763"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+</P>
